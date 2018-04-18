@@ -1,0 +1,21 @@
+<%- include('layout/header') %>
+<%- include('layout/menu') %>
+<div class="container">
+
+    <form class="form-signin" action="/accouts/register" method="POST" role="form">
+      <h2 class="form-signin-heading">Register Accouts</h2>
+      <input type="text" class="form-control" placeholder="Username" name="userName" >
+      <% if(errors.userName){%>
+        <div class="alert alert-danger"><%= errors.userName.msg%></div>
+      <% }%>
+      <input type="password" class="form-control" placeholder="Password" name="passWord" >
+      <% if(errors.passWord){%>
+        <div class="alert alert-danger"><%= errors.passWord.msg%></div>
+      <% }%>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+
+  </div> <!-- /container -->
+ 
+
+ <%- include('layout/footer') %>

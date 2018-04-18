@@ -1,0 +1,18 @@
+<%- include('layout/header') %>
+<%- include('layout/menu') %>
+
+    <% user.forEach(function(user){%>
+       <div class="jumbotron">
+
+      
+           
+            <h4><%= user.firstName %></h4>
+            <h4><%= user.lastName %></h4>
+            <p><%= user.email %></p>
+            
+            <a class="btn btn-primary" href="/user/<%= user.id %>" >Read More</a>
+             </div>
+       
+    <% }); %>
+    
+    <%- include('layout/footer') %>

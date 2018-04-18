@@ -1,0 +1,29 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "description": "this is mysql vs express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "le xuan loc",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "bower": "^1.8.4",
+    "cli": "^1.0.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.0",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.37.5"
+  }
+}

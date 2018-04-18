@@ -1,0 +1,32 @@
+<%- include('layout/header') %>
+<%- include('layout/menu') %>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th>#</th>
+                  <th>fist name</th>
+                  <th>last name</th>
+                  <th>email</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+               
+                </tr>
+              </thead>
+              <tbody>
+                    <% user.forEach(function(user){%>
+                        <tr>
+                            <td><%= user.id %></td>
+                            <td><%= user.firstName %></td>
+                            <td><%= user.lastName %></td>
+                            <td><%= user.email %></td>
+                            <td><a class="btn btn-primary" href="/user/edit/<%= user.id %>" >Edit</a></td>
+                            <td><a class="btn btn-danger delete-user"  href="#" data-id="<%= user.id %>">Delete</a></td>
+                          </tr>
+                   <% }); %>
+            
+                </tbody>
+          </table>
+    </div>
+    <%- include('layout/footer') %>
